@@ -2,8 +2,30 @@
 <html>
 <head>
     <title>File and Web Server Demo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .image-box img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align: center;">
+
+<body>
 
     <h1>File and Web Server Integration</h1>
 
@@ -19,24 +41,27 @@
 
     <h2>Images from File Server</h2>
 
-    <div style="display: flex; justify-content: center; gap: 20px;">
+    <div class="image-row">
 
-    <div>
-        <p>Image 1</p>
-        <img src="https://drive.google.com/thumbnail?id=1KC1Foxw_o5NeKt3dv6iwlJtRVUlkCsKe&sz=w1000" width="300">
+        <!-- Image 2 (LEFT) -->
+        <div class="image-box">
+            <p>Image 2</p>
+            <img src="https://drive.google.com/thumbnail?id=1tLjgrOQCqxnGymCpWFajzWrqpjkxaNxu&sz=w1000">
+        </div>
+
+        <!-- Image 1 (CENTER) -->
+        <div class="image-box">
+            <p><b>Image 1 (Center)</b></p>
+            <img src="https://drive.google.com/thumbnail?id=1KC1Foxw_o5NeKt3dv6iwlJtRVUlkCsKe&sz=w1000">
+        </div>
+
+        <!-- Image 3 (RIGHT) -->
+        <div class="image-box">
+            <p>Image 3</p>
+            <img src="https://drive.google.com/thumbnail?id=13-XIGmfwteuLtDqU6zLuwLf314ed_8jo&sz=w1000">
+        </div>
+
     </div>
-
-    <div>
-        <p>Image 2</p>
-        <img src="https://drive.google.com/thumbnail?id=1tLjgrOQCqxnGymCpWFajzWrqpjkxaNxu&sz=w1000" width="300">
-    </div>
-
-    <div>
-        <p>Image 3</p>
-        <img src="https://drive.google.com/thumbnail?id=13-XIGmfwteuLtDqU6zLuwLf314ed_8jo&sz=w1000" width="300">
-    </div>
-
-</div>
 
 </body>
 </html>
